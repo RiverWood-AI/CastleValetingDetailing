@@ -1,4 +1,4 @@
-/* Castle Valeting & Detailing — styles */
+/* Castle Valeting and Detailing — styles */
 
 :root {
   --bg: #0a0a0a;
@@ -220,6 +220,7 @@ h1, h2, h3 {
   transition: opacity .3s var(--ease), transform .3s var(--ease);
   pointer-events: none;
 }
+.mobile-menu[hidden] { display: none; }
 .mobile-menu:not([hidden]) { pointer-events: auto; }
 .mobile-menu.open { opacity: 1; transform: translateY(0); }
 .mobile-menu a {
@@ -673,6 +674,30 @@ h1, h2, h3 {
 }
 .footer-meta { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
 .footer-legal { color: #666; font-size: 0.8rem; margin: 0.8rem 0 0; }
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1.2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(212,175,55,0.12);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+.footer-credit span { opacity: 0.8; }
+.footer-credit a {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.85;
+  transition: opacity .25s var(--ease), transform .25s var(--ease);
+}
+.footer-credit a:hover { opacity: 1; transform: translateY(-1px); }
+.footer-credit img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
 
 /* --- Lightbox ---------------------------------------------------------- */
 .lightbox {

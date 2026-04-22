@@ -1,6 +1,6 @@
-# Castle Valeting & Detailing
+# Castle Valeting and Detailing
 
-Single-page marketing site for Castle Valeting & Detailing, a mobile car detailing service in Redditch.
+Single-page marketing site for Castle Valeting and Detailing, a mobile car detailing service in Redditch.
 
 ## Stack
 Pure static HTML, CSS and JavaScript. No build step, no framework, no backend. External dependencies are loaded from CDN:
