@@ -694,7 +694,7 @@ h1, h2, h3 {
 }
 .footer-credit a:hover { opacity: 1; transform: translateY(-1px); }
 .footer-credit img {
-  height: 28px;
+  height: 42px;
   width: auto;
   display: block;
 }
