@@ -2,7 +2,7 @@
 
 Static one-page site for Castle Valeting and Detailing in Redditch.
 
-Live at https://riverwood-ai.github.io/CastleValetingDetailing/.
+Live at https://www.castlevaleting.co.uk/.
 
 ## Stack
 
