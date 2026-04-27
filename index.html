@@ -33,24 +33,183 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "AutomotiveBusiness", "AutoWash"],
+  "@id": "https://riverwood-ai.github.io/CastleValetingDetailing/#business",
   "name": "Castle Valeting and Detailing",
-  "image": "assets/logo/logo-black-bg.jpg",
-  "description": "Professional mobile car valeting and detailing service based in Redditch.",
+  "alternateName": "Castle Valeting",
+  "url": "https://riverwood-ai.github.io/CastleValetingDetailing/",
+  "image": [
+    "https://riverwood-ai.github.io/CastleValetingDetailing/assets/logo/logo-black-bg.jpg",
+    "https://riverwood-ai.github.io/CastleValetingDetailing/assets/logo/logo-transparent.png",
+    "https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/castle-van.jpg"
+  ],
+  "logo": "https://riverwood-ai.github.io/CastleValetingDetailing/assets/logo/logo-transparent.png",
+  "description": "Professional mobile car valeting and detailing service based in Redditch, covering postcodes B97 and B98 and the surrounding areas. Maintenance washes, deep cleans, paint protection, upholstery shampoo and more, from £60.",
+  "slogan": "Showroom shine, on your driveway.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Redditch",
     "addressRegion": "Worcestershire",
+    "postalCode": "B97",
     "addressCountry": "GB"
   },
-  "areaServed": "Redditch and surrounding areas",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.3068,
+    "longitude": -1.9477
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Redditch"
+    },
+    {
+      "@type": "PostalCodeSpecification",
+      "postalCode": "B97",
+      "addressCountry": "GB"
+    },
+    {
+      "@type": "PostalCodeSpecification",
+      "postalCode": "B98",
+      "addressCountry": "GB"
+    },
+    {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.3068,
+        "longitude": -1.9477
+      },
+      "geoRadius": "16000"
+    }
+  ],
   "telephone": "+447751182260",
   "email": "castle_valeting@hotmail.com",
   "priceRange": "££",
+  "currenciesAccepted": "GBP",
+  "paymentAccepted": "Cash, Bank Transfer, Card",
   "sameAs": [
     "https://instagram.com/castlevaleting",
     "https://www.facebook.com/share/18AnG7vYdh/?mibextid=wwXIfr"
-  ]
+  ],
+  "knowsAbout": [
+    "Car valeting",
+    "Car detailing",
+    "Mobile car valeting",
+    "Paint protection",
+    "Upholstery shampoo",
+    "Tar removal",
+    "Leather care",
+    "Steam cleaning"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Castle Valeting and Detailing Services",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Regular Maintenance Cleans",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Small vehicle maintenance clean",
+            "price": "60",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "60",
+              "priceCurrency": "GBP",
+              "valueAddedTaxIncluded": true
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Maintenance clean (small vehicle)",
+              "description": "Regular upkeep clean for small vehicles."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Medium vehicle maintenance clean",
+            "price": "80",
+            "priceCurrency": "GBP",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Maintenance clean (medium vehicle)",
+              "description": "Regular upkeep clean for medium vehicles."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Large vehicle maintenance clean",
+            "price": "100",
+            "priceCurrency": "GBP",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Maintenance clean (large vehicle)",
+              "description": "Regular upkeep clean for large vehicles, vans and SUVs."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Offer",
+        "name": "New Car Package",
+        "price": "150",
+        "priceCurrency": "GBP",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "New Car Package",
+          "description": "Deeper full-vehicle clean, upholstery shampoo and paintwork decontamination, removing fallout and tar."
+        }
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Optional Extras",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Upholstery shampoo clean",
+            "price": "30",
+            "priceCurrency": "GBP",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Upholstery shampoo clean"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Tar removal",
+            "price": "15",
+            "priceCurrency": "GBP",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tar removal"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Leather care",
+            "price": "25",
+            "priceCurrency": "GBP",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Leather care"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Steam clean",
+            "price": "25",
+            "priceCurrency": "GBP",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steam clean"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
 </script>
 </head>
@@ -238,14 +397,14 @@
 
     <div class="swiper gallery-swiper" data-reveal>
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/black-range-rover.jpg" aria-label="View full image"><img src="assets/gallery/black-range-rover.jpg" alt="Freshly detailed black Range Rover" loading="lazy" decoding="async"></button></div>
-        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/bmw-x5.jpg" aria-label="View full image"><img src="assets/gallery/bmw-x5.jpg" alt="Gleaming black BMW X5 after a detail" loading="lazy" decoding="async"></button></div>
-        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/range-rover.jpg" aria-label="View full image"><img src="assets/gallery/range-rover.jpg" alt="Red Range Rover Sport, polished to a mirror finish" loading="lazy" decoding="async"></button></div>
-        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/tesla.jpg" aria-label="View full image"><img src="assets/gallery/tesla.jpg" alt="Tesla after a full valet" loading="lazy" decoding="async"></button></div>
-        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/discovery.jpg" aria-label="View full image"><img src="assets/gallery/discovery.jpg" alt="Land Rover Discovery after detailing" loading="lazy" decoding="async"></button></div>
-        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/model-y.jpg" aria-label="View full image"><img src="assets/gallery/model-y.jpg" alt="Tesla Model Y after a deep clean" loading="lazy" decoding="async"></button></div>
-        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/transporter.jpg" aria-label="View full image"><img src="assets/gallery/transporter.jpg" alt="VW Transporter detailed and gleaming" loading="lazy" decoding="async"></button></div>
-        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/white-range-rover.jpg" aria-label="View full image"><img src="assets/gallery/white-range-rover.jpg" alt="White Range Rover after a full detail" loading="lazy" decoding="async"></button></div>
+        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/black-range-rover.jpg" aria-label="View full image"><img src="assets/gallery/black-range-rover.jpg" alt="Freshly detailed black Range Rover" loading="lazy" decoding="async" width="1600" height="1200"></button></div>
+        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/bmw-x5.jpg" aria-label="View full image"><img src="assets/gallery/bmw-x5.jpg" alt="Gleaming black BMW X5 after a detail" loading="lazy" decoding="async" width="1200" height="1600"></button></div>
+        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/range-rover.jpg" aria-label="View full image"><img src="assets/gallery/range-rover.jpg" alt="Red Range Rover Sport, polished to a mirror finish" loading="lazy" decoding="async" width="1600" height="1200"></button></div>
+        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/tesla.jpg" aria-label="View full image"><img src="assets/gallery/tesla.jpg" alt="Tesla after a full valet" loading="lazy" decoding="async" width="1600" height="1200"></button></div>
+        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/discovery.jpg" aria-label="View full image"><img src="assets/gallery/discovery.jpg" alt="Land Rover Discovery after detailing" loading="lazy" decoding="async" width="1600" height="1200"></button></div>
+        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/model-y.jpg" aria-label="View full image"><img src="assets/gallery/model-y.jpg" alt="Tesla Model Y after a deep clean" loading="lazy" decoding="async" width="1200" height="1600"></button></div>
+        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/transporter.jpg" aria-label="View full image"><img src="assets/gallery/transporter.jpg" alt="VW Transporter detailed and gleaming" loading="lazy" decoding="async" width="1600" height="1200"></button></div>
+        <div class="swiper-slide"><button class="slide-btn" data-src="assets/gallery/white-range-rover.jpg" aria-label="View full image"><img src="assets/gallery/white-range-rover.jpg" alt="White Range Rover after a full detail" loading="lazy" decoding="async" width="1600" height="1200"></button></div>
       </div>
       <div class="swiper-pagination"></div>
       <button class="swiper-button-prev" aria-label="Previous"></button>
@@ -329,7 +488,7 @@
     <p class="footer-credit">
       <span>Website created by RiverWood</span>
       <a href="https://www.riverwoodai.com" target="_blank" rel="noopener" aria-label="RiverWood, www.riverwoodai.com">
-        <img src="assets/logo/RiverWoodLogo_BlackBG.png" alt="RiverWood" height="42" loading="lazy" decoding="async">
+        <img src="assets/logo/RiverWoodLogo_BlackBG.png" alt="RiverWood" width="111" height="42" loading="lazy" decoding="async">
       </a>
     </p>
   </div>

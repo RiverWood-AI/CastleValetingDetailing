@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riverwood-ai.github.io/CastleValetingDetailing/sitemap.xml

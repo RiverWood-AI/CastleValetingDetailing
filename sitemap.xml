@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://riverwood-ai.github.io/CastleValetingDetailing/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/logo/logo-black-bg.jpg</image:loc>
+      <image:title>Castle Valeting and Detailing logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/castle-van.jpg</image:loc>
+      <image:title>Castle Valeting and Detailing branded VW Caddy van</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/black-range-rover.jpg</image:loc>
+      <image:title>Freshly detailed black Range Rover</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/bmw-x5.jpg</image:loc>
+      <image:title>Gleaming black BMW X5 after a detail</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/range-rover.jpg</image:loc>
+      <image:title>Red Range Rover Sport, polished to a mirror finish</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/tesla.jpg</image:loc>
+      <image:title>Tesla after a full valet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/discovery.jpg</image:loc>
+      <image:title>Land Rover Discovery after detailing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/model-y.jpg</image:loc>
+      <image:title>Tesla Model Y after a deep clean</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/transporter.jpg</image:loc>
+      <image:title>VW Transporter detailed and gleaming</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://riverwood-ai.github.io/CastleValetingDetailing/assets/gallery/white-range-rover.jpg</image:loc>
+      <image:title>White Range Rover after a full detail</image:title>
+    </image:image>
+  </url>
+</urlset>
