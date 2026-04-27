@@ -451,6 +451,152 @@ h1, h2, h3 {
   border-radius: 999px;
 }
 
+/* --- Pricing ----------------------------------------------------------- */
+.pricing { background: var(--bg); }
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.6rem;
+  margin: 1rem 0 2.5rem;
+  text-align: left;
+}
+
+.price-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.4rem 2rem 2rem;
+  transition: transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
+  display: flex;
+  flex-direction: column;
+}
+.price-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-card), 0 0 0 1px rgba(212,175,55,0.15);
+}
+
+.price-card-feature {
+  background:
+    linear-gradient(180deg, rgba(212,175,55,0.06), transparent 70%),
+    var(--bg-card);
+  border-color: var(--border-strong);
+}
+.price-card-feature::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(212,175,55,0.12), transparent 60%);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.price-badge {
+  position: absolute;
+  top: -12px; left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3rem 0.85rem;
+  font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: var(--gold-grad);
+  color: #1a1204;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.price-card-head {
+  margin-bottom: 1.4rem;
+}
+.price-card-head h3 {
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.price-card-head p {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+.price-headline {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem !important;
+  background: var(--gold-grad);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent !important;
+  letter-spacing: 0.04em;
+  margin-top: 0.4rem !important;
+}
+
+.price-list {
+  list-style: none; padding: 0; margin: 0 0 1rem;
+}
+.price-list li {
+  display: flex; align-items: baseline;
+  padding: 0.65rem 0;
+  border-bottom: 1px dashed rgba(212,175,55,0.12);
+  gap: 0.6rem;
+}
+.price-list li:last-child { border-bottom: 0; }
+.price-name { color: var(--text); flex: 0 1 auto; }
+.price-dots {
+  flex: 1 1 auto;
+  border-bottom: 1px dotted rgba(212,175,55,0.25);
+  transform: translateY(-4px);
+  min-width: 1rem;
+}
+.price-amount {
+  color: var(--gold);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.price-features {
+  list-style: none; padding: 0; margin: 0;
+}
+.price-features li {
+  position: relative;
+  padding: 0.5rem 0 0.5rem 1.6rem;
+  color: var(--text);
+  border-bottom: 1px dashed rgba(212,175,55,0.12);
+}
+.price-features li:last-child { border-bottom: 0; }
+.price-features li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 1.05rem;
+  width: 0.85rem; height: 0.85rem;
+  background: var(--gold-grad);
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>") center/contain no-repeat;
+          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>") center/contain no-repeat;
+}
+
+.price-note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 1rem 0 0;
+  font-style: italic;
+}
+
+.price-enquire {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin: 0;
+}
+.price-enquire a {
+  color: var(--gold);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-strong);
+  transition: color .25s var(--ease), border-color .25s var(--ease);
+}
+.price-enquire a:hover {
+  color: var(--gold-light);
+  border-bottom-color: var(--gold-light);
+}
+
 /* --- Gallery (Swiper) -------------------------------------------------- */
 .gallery { background: #0d0d0d; overflow: hidden; }
 .gallery .section-inner { margin-bottom: 2rem; }
