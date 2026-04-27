@@ -22,3 +22,10 @@ npm-debug.log*
 /CastleValetingLogo.jpeg
 /CastleValetingLogo-Transparent.png
 /CastleValetingFlyer.jpeg
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
