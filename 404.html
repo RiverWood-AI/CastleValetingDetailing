@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0a">
+<title>Page not found | Castle Valeting and Detailing</title>
+<meta name="description" content="The page you are looking for could not be found. Castle Valeting and Detailing offers professional mobile car valeting in Redditch.">
+<meta name="robots" content="noindex, follow">
+
+<link rel="icon" type="image/png" href="/assets/logo/logo-transparent.png">
+<link rel="apple-touch-icon" href="/assets/logo/logo-transparent.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+<style>
+  .notfound {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex; align-items: center; justify-content: center;
+    padding: calc(var(--nav-h) + 2rem) 1.5rem 4rem;
+    text-align: center;
+    position: relative;
+    isolation: isolate;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(212,175,55,0.08), transparent 55%),
+      radial-gradient(ellipse at 80% 100%, rgba(212,175,55,0.06), transparent 50%),
+      var(--bg);
+  }
+  .notfound-inner { max-width: 720px; }
+  .notfound .notfound-code {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(5rem, 18vw, 10rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    margin: 0 0 0.2em;
+    background: var(--gold-grad);
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 6px 30px rgba(212,175,55,0.25));
+  }
+  .notfound h1 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    margin: 0 0 0.6em;
+  }
+  .notfound .notfound-desc {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 520px;
+    margin: 0 auto 2.4rem;
+  }
+  .notfound-ctas {
+    display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header scrolled" id="siteHeader">
+  <div class="nav-inner">
+    <a class="brand" href="/" aria-label="Castle Valeting and Detailing home">
+      <img src="/assets/logo/CastleLogoCar.png" alt="" width="122" height="40" decoding="async">
+      <span class="brand-text">
+        <span class="brand-title">Castle</span>
+        <span class="brand-sub">Valeting and Detailing</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#services">Services</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#gallery">Gallery</a>
+      <a href="/#about">About</a>
+      <a href="/#contact">Contact</a>
+      <a class="nav-cta" href="tel:07751182260">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="notfound">
+    <div class="notfound-inner">
+      <p class="notfound-code">404</p>
+      <h1><span class="gold-text">Page Not Found</span></h1>
+      <p class="notfound-desc">This page seems to have driven off. Head back to the homepage, or call us on <a href="tel:07751182260">07751&nbsp;182260</a> if you were looking to book.</p>
+      <div class="notfound-ctas">
+        <a class="btn btn-primary" href="/">Back to Home</a>
+        <a class="btn btn-ghost" href="/#contact">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="/assets/logo/logo-transparent.png" alt="Castle Valeting and Detailing" width="72" height="72" loading="lazy">
+    <p class="footer-title gold-text">Castle Valeting and Detailing</p>
+    <p class="footer-meta">Mobile valeting across Redditch and surrounding areas</p>
+    <p class="footer-legal">&copy; <span id="year"></span> Castle Valeting and Detailing. All rights reserved.</p>
+    <p class="footer-credit">
+      <span>Website created by RiverWood</span>
+      <a href="https://www.riverwoodai.com" target="_blank" rel="noopener" aria-label="RiverWood, www.riverwoodai.com">
+        <img src="/assets/logo/RiverWoodLogo_BlackBG.png" alt="RiverWood" width="111" height="42" loading="lazy" decoding="async">
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
